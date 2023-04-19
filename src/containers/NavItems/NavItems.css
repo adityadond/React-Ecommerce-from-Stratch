@@ -1,0 +1,38 @@
+.nav__items{
+  display: flex;
+    max-height: 39px;
+    padding-top: 0;
+    background-color: #232f3e;
+    padding: 10px;
+    align-items: center;
+   
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: azure;
+    cursor: pointer;
+}
+
+.all_nav{
+    color: azure;
+    display: flex;
+    align-items: center;
+}
+
+.name__item{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav__items__left{
+    color: azure;
+    font-size: 14px;
+}

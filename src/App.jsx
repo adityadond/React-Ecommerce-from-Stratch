@@ -8,10 +8,13 @@ import Footer from "./containers/Footer";
 import About from "./containers/About";
 import Cart from "./containers/Cart/Cart";
 
+import NavItems from './containers/NavItems/NavItems';
+
 const AppLayout = () => {
   return (
     <>
       <Header />
+      <NavItems/>
       <Outlet />
       <Footer />
     </>

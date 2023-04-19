@@ -1,17 +1,53 @@
-.header{
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131414;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 10px;
+}
+
+.header__card {
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__optionBasket{
     display: flex;
     align-items: center;
-    height: 60px;
-    background-color: #131921;;
-    justify-content:space-around;
+    color: white;
 }
 
-.amazonlogo img{
-    object-fit: cover;
-    width: 40%;
-    opacity: transparent;
+.header__basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.header__card{
-color: azure;
+.header__option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header__optionLineOne{
+    font-size: 10px;
+}
+
+.header__optionLineTwo{
+    font-size: 13px;
+    font-family: 800;
+
 }

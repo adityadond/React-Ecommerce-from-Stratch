@@ -4,11 +4,13 @@ import "./ProductComponent.css";
 import { Link } from "react-router-dom";
 
 function ProductComponent({products}) {
+console.log(products)
+
 
   const renderList = products?.map((product) => {
     return (
       <>
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/${product.id}`}  style={{ textDecoration: 'none' , color:"black"}}>
           <div className="cards">
             <img
               src={product.thumbnail}
@@ -18,6 +20,13 @@ function ProductComponent({products}) {
             <div className="card_title">{product.title}</div>
             <div>{product.brand}</div>
             <div className="card_des">{product.description}</div>
+            {/* <div className="card_des">
+          {Array(val)
+            .fill(rating)
+            .map((_, i) => (
+              <p>⭐</p>
+            ))} */}
+        {/* </div> */}
             <div className="price"> ${product.price}</div>
           </div>
         </Link>
