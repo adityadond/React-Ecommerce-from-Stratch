@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #131921;;
+    justify-content:space-around;
+}
+
+.amazonlogo img{
+    object-fit: cover;
+    width: 40%;
+    opacity: transparent;
+}
+
+.header__card{
+color: azure;
+}
