@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
@@ -22,20 +22,18 @@ function Header() {
         text2={"Select your location"}
         emoliFlag={true}
       />
-       <div>
-      <input placeholder="Search Amazon.In"/>
-    </div>
+      <div>
+        <input placeholder="Search Amazon.In" />
+      </div>
 
-      <HeaderComponents text1={"Hello, sign in"} text2={"Account& Lists"} />
+      <Link to="/login">Login</Link>
 
       <HeaderComponents text1={"Return"} text2={"& Orders"} />
 
       <h4 className="header__optionBasket">
         {" "}
-        <AiOutlineShoppingCart size={30} />
-        <span className="header__optionLineTwo header__basketCount">
-             1
-            </span>
+        <AiOutlineShoppingCart size={30} data-testid="shopping-cart-icon" />
+        <span className="header__optionLineTwo header__basketCount">1</span>
         <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
           Cart
         </Link>

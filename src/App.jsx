@@ -9,6 +9,8 @@ import About from "./containers/About";
 import Cart from "./containers/Cart/Cart";
 
 import NavItems from './containers/NavItems/NavItems';
+import Login from "./containers/Login/Login";
+import ProtectedRoutes from "./containers/ProtectedRoutes";
 
 const AppLayout = () => {
   return (
@@ -35,13 +37,17 @@ export const router = createBrowserRouter([
         path: "/product/:id",
         element: <ProductDetail />,
       },
-      {
-        path: "/about",
-        element: <About />,
-      },
+      // {
+      //   path: "/about",
+      //   element: <ProtectedRoutes auth={false} component={<About/>}/>,
+      // },
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
