@@ -1,0 +1,28 @@
+.home__main{
+    background-color: lavenderblush;
+    height: auto;
+    width: auto;
+}
+
+.homeCard {
+  position: relative;
+  top: 250px;
+  left: 20px;
+  z-index: 1;
+  background: #fff;
+  height: 100%;
+  width: fit-content;
+  
+}
+
+.homeCard__card4 {
+  display: flex;
+  gap: 15px;
+ 
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 290px;
+  width: 344px;
+  flex-direction: column;
+ 
+}

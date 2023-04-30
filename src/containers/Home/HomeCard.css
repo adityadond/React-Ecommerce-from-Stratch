@@ -1,0 +1,31 @@
+.homecard__ {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.homecard__header {
+  padding: 0 20px;
+  font-size: 13px !important;
+  line-height: 19px !important;
+}
+
+.homecard__body {
+  height: 100%;
+  width: 100%;
+}
+
+.home__logo {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  padding: 0 20px;
+}
+
+.homecard__footer {
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  bottom: 0;
+  width: 100%;
+}
